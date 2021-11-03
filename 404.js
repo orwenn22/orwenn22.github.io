@@ -197,7 +197,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
     }
   
    }
-   loadPackage({"files": [{"filename": "/res/404mac.png", "start": 0, "end": 734}], "remote_package_size": 734, "package_uuid": "c427359e-03af-40db-a7c5-9de14f0dc833"});
+   loadPackage({"files": [{"filename": "/res/404mac.png", "start": 0, "end": 734}], "remote_package_size": 734, "package_uuid": "46f8b8b0-dd55-4096-9980-8ce8c9ddf4c2"});
   
   })();
   
@@ -1939,6 +1939,7 @@ var ASM_CONSTS = {
 };
 function GetCanvasHeight(){ return canvas.clientHeight; }
 function GetCanvasWidth(){ return canvas.clientWidth; }
+function detectMobile(){ const toMatch = [ /Android/i, /webOS/i, /iPhone/i, /iPad/i, /iPod/i, /BlackBerry/i, /Windows Phone/i ]; return toMatch.some((toMatchItem) => { return navigator.userAgent.match(toMatchItem); }); }
 function getRandomint(max){ return Math.floor(Math.random() * max); }
 function getWindowHeight(){ return window.innerHeight; }
 function getWindowWidth(){ return window.innerWidth; }
@@ -9323,6 +9324,7 @@ var asmLibraryArg = {
   "__syscall_getcwd": ___syscall_getcwd,
   "__syscall_ioctl": ___syscall_ioctl,
   "__syscall_open": ___syscall_open,
+  "detectMobile": detectMobile,
   "emscripten_get_element_css_size": _emscripten_get_element_css_size,
   "emscripten_get_gamepad_status": _emscripten_get_gamepad_status,
   "emscripten_get_now": _emscripten_get_now,
