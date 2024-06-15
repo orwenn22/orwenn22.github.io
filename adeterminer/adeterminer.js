@@ -39,7 +39,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpru38izmg.js
+// include: /tmp/tmp4l2r5fbo.js
 
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
@@ -217,25 +217,25 @@ Module['FS_createPath']("/", "res", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/maps/Big.leg", "start": 0, "end": 102}, {"filename": "/maps/Big4.leg", "start": 102, "end": 252}, {"filename": "/maps/Little.leg", "start": 252, "end": 441}, {"filename": "/res/battery.png", "start": 441, "end": 2045}, {"filename": "/res/cannon_sprite.png", "start": 2045, "end": 3648}, {"filename": "/res/cool_transition.png", "start": 3648, "end": 483639}, {"filename": "/res/default.png", "start": 483639, "end": 494172}, {"filename": "/res/empty_outline.png", "start": 494172, "end": 498553}, {"filename": "/res/explosion-boom.png", "start": 498553, "end": 511459}, {"filename": "/res/green_marker.png", "start": 511459, "end": 512228}, {"filename": "/res/jumping_sprite.png", "start": 512228, "end": 513831}, {"filename": "/res/littlewowmap.png", "start": 513831, "end": 518453}, {"filename": "/res/menubg.png", "start": 518453, "end": 519089}, {"filename": "/res/menubg_credits.png", "start": 519089, "end": 524160}, {"filename": "/res/menubg_credits_alt.png", "start": 524160, "end": 529222}, {"filename": "/res/menubg_grayscale.png", "start": 529222, "end": 529850}, {"filename": "/res/menubg_option.png", "start": 529850, "end": 534918}, {"filename": "/res/mini.png", "start": 534918, "end": 539387}, {"filename": "/res/mini_blue.png", "start": 539387, "end": 541015}, {"filename": "/res/mini_ded.png", "start": 541015, "end": 545380}, {"filename": "/res/mini_red.png", "start": 545380, "end": 547008}, {"filename": "/res/player.png", "start": 547008, "end": 552987}, {"filename": "/res/player_injump.png", "start": 552987, "end": 560800}, {"filename": "/res/player_jump.png", "start": 560800, "end": 567232}, {"filename": "/res/player_portal.png", "start": 567232, "end": 585707}, {"filename": "/res/player_shooting.png", "start": 585707, "end": 593887}, {"filename": "/res/player_wall.png", "start": 593887, "end": 608948}, {"filename": "/res/portal.png", "start": 608948, "end": 614860}, {"filename": "/res/portal_anim.png", "start": 614860, "end": 625805}, {"filename": "/res/portal_gun.png", "start": 625805, "end": 626620}, {"filename": "/res/portal_remover.png", "start": 626620, "end": 632039}, {"filename": "/res/potato.png", "start": 632039, "end": 632993}, {"filename": "/res/strength_downgrade.png", "start": 632993, "end": 633213}, {"filename": "/res/strength_upgrade.png", "start": 633213, "end": 633431}, {"filename": "/res/testsprite.png", "start": 633431, "end": 633551}, {"filename": "/res/tiled_button.png", "start": 633551, "end": 634184}, {"filename": "/res/tiled_button_left.png", "start": 634184, "end": 634806}, {"filename": "/res/tiled_button_right.png", "start": 634806, "end": 635443}, {"filename": "/res/tilemap_grass.aseprite", "start": 635443, "end": 636985}, {"filename": "/res/tilemap_grass.png", "start": 636985, "end": 638699}, {"filename": "/res/truelle.png", "start": 638699, "end": 639057}, {"filename": "/res/wall.png", "start": 639057, "end": 645809}, {"filename": "/res/wowmap.png", "start": 645809, "end": 658232}], "remote_package_size": 658232});
+    loadPackage({"files": [{"filename": "/maps/Big.leg", "start": 0, "end": 82}, {"filename": "/maps/Big4.leg", "start": 82, "end": 212}, {"filename": "/maps/Little.leg", "start": 212, "end": 382}, {"filename": "/res/battery.png", "start": 382, "end": 1986}, {"filename": "/res/cannon_sprite.png", "start": 1986, "end": 3589}, {"filename": "/res/cool_transition.png", "start": 3589, "end": 483580}, {"filename": "/res/default.png", "start": 483580, "end": 494113}, {"filename": "/res/empty_outline.png", "start": 494113, "end": 498494}, {"filename": "/res/explosion-boom.png", "start": 498494, "end": 511400}, {"filename": "/res/green_marker.png", "start": 511400, "end": 512169}, {"filename": "/res/jumping_sprite.png", "start": 512169, "end": 513772}, {"filename": "/res/littlewowmap.png", "start": 513772, "end": 518394}, {"filename": "/res/menubg.png", "start": 518394, "end": 519030}, {"filename": "/res/menubg_credits.png", "start": 519030, "end": 524101}, {"filename": "/res/menubg_credits_alt.png", "start": 524101, "end": 529163}, {"filename": "/res/menubg_grayscale.png", "start": 529163, "end": 529791}, {"filename": "/res/menubg_option.png", "start": 529791, "end": 534859}, {"filename": "/res/mini.png", "start": 534859, "end": 539328}, {"filename": "/res/mini_blue.png", "start": 539328, "end": 540956}, {"filename": "/res/mini_ded.png", "start": 540956, "end": 545321}, {"filename": "/res/mini_red.png", "start": 545321, "end": 546949}, {"filename": "/res/player.png", "start": 546949, "end": 552928}, {"filename": "/res/player_injump.png", "start": 552928, "end": 560741}, {"filename": "/res/player_jump.png", "start": 560741, "end": 567173}, {"filename": "/res/player_portal.png", "start": 567173, "end": 585648}, {"filename": "/res/player_shooting.png", "start": 585648, "end": 593828}, {"filename": "/res/player_wall.png", "start": 593828, "end": 608889}, {"filename": "/res/portal.png", "start": 608889, "end": 614801}, {"filename": "/res/portal_anim.png", "start": 614801, "end": 625746}, {"filename": "/res/portal_gun.png", "start": 625746, "end": 626561}, {"filename": "/res/portal_remover.png", "start": 626561, "end": 631980}, {"filename": "/res/potato.png", "start": 631980, "end": 632934}, {"filename": "/res/strength_downgrade.png", "start": 632934, "end": 633154}, {"filename": "/res/strength_upgrade.png", "start": 633154, "end": 633372}, {"filename": "/res/testsprite.png", "start": 633372, "end": 633492}, {"filename": "/res/tiled_button.png", "start": 633492, "end": 634125}, {"filename": "/res/tiled_button_left.png", "start": 634125, "end": 634747}, {"filename": "/res/tiled_button_right.png", "start": 634747, "end": 635384}, {"filename": "/res/tilemap_grass.aseprite", "start": 635384, "end": 636926}, {"filename": "/res/tilemap_grass.png", "start": 636926, "end": 638640}, {"filename": "/res/truelle.png", "start": 638640, "end": 638998}, {"filename": "/res/wall.png", "start": 638998, "end": 645750}, {"filename": "/res/wowmap.png", "start": 645750, "end": 658173}], "remote_package_size": 658173});
 
   })();
 
-// end include: /tmp/tmpru38izmg.js
-// include: /tmp/tmpmw02t9et.js
+// end include: /tmp/tmp4l2r5fbo.js
+// include: /tmp/tmp9m89bym0.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['$ww'] || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmpmw02t9et.js
-// include: /tmp/tmpl81g5tee.js
+  // end include: /tmp/tmp9m89bym0.js
+// include: /tmp/tmp3ozccisy.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach(function(task) {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmpl81g5tee.js
+  // end include: /tmp/tmp3ozccisy.js
 
 
 // Sometimes an existing Module object exists with properties
@@ -439,7 +439,7 @@ legacyModuleProp('read', 'read_');
 legacyModuleProp('readAsync', 'readAsync');
 legacyModuleProp('readBinary', 'readBinary');
 legacyModuleProp('setWindowTitle', 'setWindowTitle');
-var IDBFS = 'IDBFS is no longer included by default; build with -lidbfs.js';
+
 var PROXYFS = 'PROXYFS is no longer included by default; build with -lproxyfs.js';
 var WORKERFS = 'WORKERFS is no longer included by default; build with -lworkerfs.js';
 var FETCHFS = 'FETCHFS is no longer included by default; build with -lfetchfs.js';
@@ -1132,40 +1132,42 @@ function dbg(...args) {
 // === Body ===
 
 var ASM_CONSTS = {
-  115524: () => { if (document.fullscreenElement) return 1; },  
- 115570: () => { return document.getElementById('canvas').width; },  
- 115622: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 115690: () => { document.exitFullscreen(); },  
- 115717: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
- 115790: () => { if (document.fullscreenElement) return 1; },  
- 115836: () => { return document.getElementById('canvas').width; },  
- 115888: () => { return screen.width; },  
- 115913: () => { document.exitFullscreen(); },  
- 115940: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
- 116073: () => { if (document.fullscreenElement) return 1; },  
- 116119: () => { return document.getElementById('canvas').width; },  
- 116171: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 116239: () => { if (document.fullscreenElement) return 1; },  
- 116285: () => { return document.getElementById('canvas').width; },  
- 116337: () => { return screen.width; },  
- 116362: () => { if (document.fullscreenElement) return 1; },  
- 116408: () => { return document.getElementById('canvas').width; },  
- 116460: () => { return screen.width; },  
- 116485: () => { document.exitFullscreen(); },  
- 116512: () => { if (document.fullscreenElement) return 1; },  
- 116558: () => { return document.getElementById('canvas').width; },  
- 116610: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 116678: () => { document.exitFullscreen(); },  
- 116705: () => { return screen.width; },  
- 116730: () => { return screen.height; },  
- 116756: () => { return window.screenX; },  
- 116783: () => { return window.screenY; },  
- 116810: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
- 116863: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
- 116934: () => { document.getElementById('canvas').style.cursor = 'none'; },  
- 116991: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
- 117062: () => { if (document.fullscreenElement) return 1; },  
- 117108: () => { if (document.pointerLockElement) return 1; }
+  116788: () => { FS.mkdir('/idbfs'); FS.mount(IDBFS, {}, '/idbfs'); FS.syncfs(true, function (err) { console.log("Failed to mount idbfs, things are most likely going to break"); console.log(err); }); },  
+ 116971: () => { FS.syncfs(function (err) { }); },  
+ 117002: () => { if (document.fullscreenElement) return 1; },  
+ 117048: () => { return document.getElementById('canvas').width; },  
+ 117100: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 117168: () => { document.exitFullscreen(); },  
+ 117195: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
+ 117268: () => { if (document.fullscreenElement) return 1; },  
+ 117314: () => { return document.getElementById('canvas').width; },  
+ 117366: () => { return screen.width; },  
+ 117391: () => { document.exitFullscreen(); },  
+ 117418: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
+ 117551: () => { if (document.fullscreenElement) return 1; },  
+ 117597: () => { return document.getElementById('canvas').width; },  
+ 117649: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 117717: () => { if (document.fullscreenElement) return 1; },  
+ 117763: () => { return document.getElementById('canvas').width; },  
+ 117815: () => { return screen.width; },  
+ 117840: () => { if (document.fullscreenElement) return 1; },  
+ 117886: () => { return document.getElementById('canvas').width; },  
+ 117938: () => { return screen.width; },  
+ 117963: () => { document.exitFullscreen(); },  
+ 117990: () => { if (document.fullscreenElement) return 1; },  
+ 118036: () => { return document.getElementById('canvas').width; },  
+ 118088: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 118156: () => { document.exitFullscreen(); },  
+ 118183: () => { return screen.width; },  
+ 118208: () => { return screen.height; },  
+ 118234: () => { return window.screenX; },  
+ 118261: () => { return window.screenY; },  
+ 118288: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
+ 118341: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
+ 118412: () => { document.getElementById('canvas').style.cursor = 'none'; },  
+ 118469: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
+ 118540: () => { if (document.fullscreenElement) return 1; },  
+ 118586: () => { if (document.pointerLockElement) return 1; }
 };
 function GetWindowInnerWidth() { return window.innerWidth; }
 function GetWindowInnerHeight() { return window.innerHeight; }
@@ -2268,6 +2270,307 @@ function GetWindowInnerHeight() { return window.innerHeight; }
   
   
   
+  
+  
+  
+  var IDBFS = {
+  dbs:{
+  },
+  indexedDB:() => {
+        if (typeof indexedDB != 'undefined') return indexedDB;
+        var ret = null;
+        if (typeof window == 'object') ret = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        assert(ret, 'IDBFS used, but indexedDB not supported');
+        return ret;
+      },
+  DB_VERSION:21,
+  DB_STORE_NAME:"FILE_DATA",
+  mount:(...args) => MEMFS.mount(...args),
+  syncfs:(mount, populate, callback) => {
+        IDBFS.getLocalSet(mount, (err, local) => {
+          if (err) return callback(err);
+  
+          IDBFS.getRemoteSet(mount, (err, remote) => {
+            if (err) return callback(err);
+  
+            var src = populate ? remote : local;
+            var dst = populate ? local : remote;
+  
+            IDBFS.reconcile(src, dst, callback);
+          });
+        });
+      },
+  quit:() => {
+        Object.values(IDBFS.dbs).forEach((value) => value.close());
+        IDBFS.dbs = {};
+      },
+  getDB:(name, callback) => {
+        // check the cache first
+        var db = IDBFS.dbs[name];
+        if (db) {
+          return callback(null, db);
+        }
+  
+        var req;
+        try {
+          req = IDBFS.indexedDB().open(name, IDBFS.DB_VERSION);
+        } catch (e) {
+          return callback(e);
+        }
+        if (!req) {
+          return callback("Unable to connect to IndexedDB");
+        }
+        req.onupgradeneeded = (e) => {
+          var db = /** @type {IDBDatabase} */ (e.target.result);
+          var transaction = e.target.transaction;
+  
+          var fileStore;
+  
+          if (db.objectStoreNames.contains(IDBFS.DB_STORE_NAME)) {
+            fileStore = transaction.objectStore(IDBFS.DB_STORE_NAME);
+          } else {
+            fileStore = db.createObjectStore(IDBFS.DB_STORE_NAME);
+          }
+  
+          if (!fileStore.indexNames.contains('timestamp')) {
+            fileStore.createIndex('timestamp', 'timestamp', { unique: false });
+          }
+        };
+        req.onsuccess = () => {
+          db = /** @type {IDBDatabase} */ (req.result);
+  
+          // add to the cache
+          IDBFS.dbs[name] = db;
+          callback(null, db);
+        };
+        req.onerror = (e) => {
+          callback(e.target.error);
+          e.preventDefault();
+        };
+      },
+  getLocalSet:(mount, callback) => {
+        var entries = {};
+  
+        function isRealDir(p) {
+          return p !== '.' && p !== '..';
+        };
+        function toAbsolute(root) {
+          return (p) => PATH.join2(root, p);
+        };
+  
+        var check = FS.readdir(mount.mountpoint).filter(isRealDir).map(toAbsolute(mount.mountpoint));
+  
+        while (check.length) {
+          var path = check.pop();
+          var stat;
+  
+          try {
+            stat = FS.stat(path);
+          } catch (e) {
+            return callback(e);
+          }
+  
+          if (FS.isDir(stat.mode)) {
+            check.push(...FS.readdir(path).filter(isRealDir).map(toAbsolute(path)));
+          }
+  
+          entries[path] = { 'timestamp': stat.mtime };
+        }
+  
+        return callback(null, { type: 'local', entries: entries });
+      },
+  getRemoteSet:(mount, callback) => {
+        var entries = {};
+  
+        IDBFS.getDB(mount.mountpoint, (err, db) => {
+          if (err) return callback(err);
+  
+          try {
+            var transaction = db.transaction([IDBFS.DB_STORE_NAME], 'readonly');
+            transaction.onerror = (e) => {
+              callback(e.target.error);
+              e.preventDefault();
+            };
+  
+            var store = transaction.objectStore(IDBFS.DB_STORE_NAME);
+            var index = store.index('timestamp');
+  
+            index.openKeyCursor().onsuccess = (event) => {
+              var cursor = event.target.result;
+  
+              if (!cursor) {
+                return callback(null, { type: 'remote', db, entries });
+              }
+  
+              entries[cursor.primaryKey] = { 'timestamp': cursor.key };
+  
+              cursor.continue();
+            };
+          } catch (e) {
+            return callback(e);
+          }
+        });
+      },
+  loadLocalEntry:(path, callback) => {
+        var stat, node;
+  
+        try {
+          var lookup = FS.lookupPath(path);
+          node = lookup.node;
+          stat = FS.stat(path);
+        } catch (e) {
+          return callback(e);
+        }
+  
+        if (FS.isDir(stat.mode)) {
+          return callback(null, { 'timestamp': stat.mtime, 'mode': stat.mode });
+        } else if (FS.isFile(stat.mode)) {
+          // Performance consideration: storing a normal JavaScript array to a IndexedDB is much slower than storing a typed array.
+          // Therefore always convert the file contents to a typed array first before writing the data to IndexedDB.
+          node.contents = MEMFS.getFileDataAsTypedArray(node);
+          return callback(null, { 'timestamp': stat.mtime, 'mode': stat.mode, 'contents': node.contents });
+        } else {
+          return callback(new Error('node type not supported'));
+        }
+      },
+  storeLocalEntry:(path, entry, callback) => {
+        try {
+          if (FS.isDir(entry['mode'])) {
+            FS.mkdirTree(path, entry['mode']);
+          } else if (FS.isFile(entry['mode'])) {
+            FS.writeFile(path, entry['contents'], { canOwn: true });
+          } else {
+            return callback(new Error('node type not supported'));
+          }
+  
+          FS.chmod(path, entry['mode']);
+          FS.utime(path, entry['timestamp'], entry['timestamp']);
+        } catch (e) {
+          return callback(e);
+        }
+  
+        callback(null);
+      },
+  removeLocalEntry:(path, callback) => {
+        try {
+          var stat = FS.stat(path);
+  
+          if (FS.isDir(stat.mode)) {
+            FS.rmdir(path);
+          } else if (FS.isFile(stat.mode)) {
+            FS.unlink(path);
+          }
+        } catch (e) {
+          return callback(e);
+        }
+  
+        callback(null);
+      },
+  loadRemoteEntry:(store, path, callback) => {
+        var req = store.get(path);
+        req.onsuccess = (event) => callback(null, event.target.result);
+        req.onerror = (e) => {
+          callback(e.target.error);
+          e.preventDefault();
+        };
+      },
+  storeRemoteEntry:(store, path, entry, callback) => {
+        try {
+          var req = store.put(entry, path);
+        } catch (e) {
+          callback(e);
+          return;
+        }
+        req.onsuccess = (event) => callback();
+        req.onerror = (e) => {
+          callback(e.target.error);
+          e.preventDefault();
+        };
+      },
+  removeRemoteEntry:(store, path, callback) => {
+        var req = store.delete(path);
+        req.onsuccess = (event) => callback();
+        req.onerror = (e) => {
+          callback(e.target.error);
+          e.preventDefault();
+        };
+      },
+  reconcile:(src, dst, callback) => {
+        var total = 0;
+  
+        var create = [];
+        Object.keys(src.entries).forEach(function (key) {
+          var e = src.entries[key];
+          var e2 = dst.entries[key];
+          if (!e2 || e['timestamp'].getTime() != e2['timestamp'].getTime()) {
+            create.push(key);
+            total++;
+          }
+        });
+  
+        var remove = [];
+        Object.keys(dst.entries).forEach(function (key) {
+          if (!src.entries[key]) {
+            remove.push(key);
+            total++;
+          }
+        });
+  
+        if (!total) {
+          return callback(null);
+        }
+  
+        var errored = false;
+        var db = src.type === 'remote' ? src.db : dst.db;
+        var transaction = db.transaction([IDBFS.DB_STORE_NAME], 'readwrite');
+        var store = transaction.objectStore(IDBFS.DB_STORE_NAME);
+  
+        function done(err) {
+          if (err && !errored) {
+            errored = true;
+            return callback(err);
+          }
+        };
+  
+        // transaction may abort if (for example) there is a QuotaExceededError
+        transaction.onerror = transaction.onabort = (e) => {
+          done(e.target.error);
+          e.preventDefault();
+        };
+  
+        transaction.oncomplete = (e) => {
+          if (!errored) {
+            callback(null);
+          }
+        };
+  
+        // sort paths in ascending order so directory entries are created
+        // before the files inside them
+        create.sort().forEach((path) => {
+          if (dst.type === 'local') {
+            IDBFS.loadRemoteEntry(store, path, (err, entry) => {
+              if (err) return done(err);
+              IDBFS.storeLocalEntry(path, entry, done);
+            });
+          } else {
+            IDBFS.loadLocalEntry(path, (err, entry) => {
+              if (err) return done(err);
+              IDBFS.storeRemoteEntry(store, path, entry, done);
+            });
+          }
+        });
+  
+        // sort paths in descending order so files are deleted before their
+        // parent directories
+        remove.sort().reverse().forEach((path) => {
+          if (dst.type === 'local') {
+            IDBFS.removeLocalEntry(path, done);
+          } else {
+            IDBFS.removeRemoteEntry(store, path, done);
+          }
+        });
+      },
+  };
   
   var ERRNO_MESSAGES = {
   0:"Success",
@@ -3756,6 +4059,7 @@ function GetWindowInnerHeight() { return window.innerHeight; }
   
         FS.filesystems = {
           'MEMFS': MEMFS,
+          'IDBFS': IDBFS,
         };
       },
   init(input, output, error) {
@@ -4182,6 +4486,18 @@ function GetWindowInnerHeight() { return window.innerHeight; }
         return ret;
       },
   };
+  function ___syscall_chmod(path, mode) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      FS.chmod(path, mode);
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
   function ___syscall_faccessat(dirfd, path, amode, flags) {
   try {
   
@@ -4204,6 +4520,17 @@ function GetWindowInnerHeight() { return window.innerHeight; }
       if (perms /* otherwise, they've just passed F_OK */ && FS.nodePermissions(node, perms)) {
         return -2;
       }
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
+  function ___syscall_fchmod(fd, mode) {
+  try {
+  
+      FS.fchmod(fd, mode);
       return 0;
     } catch (e) {
     if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
@@ -4277,6 +4604,27 @@ function GetWindowInnerHeight() { return window.innerHeight; }
     if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
     return -e.errno;
   }
+  }
+
+  var convertI32PairToI53Checked = (lo, hi) => {
+      assert(lo == (lo >>> 0) || lo == (lo|0)); // lo should either be a i32 or a u32
+      assert(hi === (hi|0));                    // hi should be a i32
+      return ((hi + 0x200000) >>> 0 < 0x400001 - !!lo) ? (lo >>> 0) + hi * 4294967296 : NaN;
+    };
+  function ___syscall_ftruncate64(fd,length_low, length_high) {
+    var length = convertI32PairToI53Checked(length_low, length_high);
+  
+    
+  try {
+  
+      if (isNaN(length)) return 61;
+      FS.ftruncate(fd, length);
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  ;
   }
 
   
@@ -4451,6 +4799,23 @@ function GetWindowInnerHeight() { return window.innerHeight; }
   
       path = SYSCALLS.getStr(path);
       return SYSCALLS.doStat(FS.lstat, path, buf);
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return -e.errno;
+  }
+  }
+
+  function ___syscall_mkdirat(dirfd, path, mode) {
+  try {
+  
+      path = SYSCALLS.getStr(path);
+      path = SYSCALLS.calculateAt(dirfd, path);
+      // remove a trailing slash, if one - /a/b/ has basename of '', but
+      // we want to create b in the context of this function
+      path = PATH.normalize(path);
+      if (path[path.length-1] === '/') path = path.substr(0, path.length-1);
+      FS.mkdir(path, mode, 0);
+      return 0;
     } catch (e) {
     if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
     return -e.errno;
@@ -8182,6 +8547,32 @@ function GetWindowInnerHeight() { return window.innerHeight; }
   }
   }
 
+  function _fd_fdstat_get(fd, pbuf) {
+  try {
+  
+      var rightsBase = 0;
+      var rightsInheriting = 0;
+      var flags = 0;
+      {
+        var stream = SYSCALLS.getStreamFromFD(fd);
+        // All character devices are terminals (other things a Linux system would
+        // assume is a character device, like the mouse, we have special APIs for).
+        var type = stream.tty ? 2 :
+                   FS.isDir(stream.mode) ? 3 :
+                   FS.isLink(stream.mode) ? 7 :
+                   4;
+      }
+      HEAP8[pbuf] = type;
+      HEAP16[(((pbuf)+(2))>>1)] = flags;
+      (tempI64 = [rightsBase>>>0,(tempDouble = rightsBase,(+(Math.abs(tempDouble))) >= 1.0 ? (tempDouble > 0.0 ? (+(Math.floor((tempDouble)/4294967296.0)))>>>0 : (~~((+(Math.ceil((tempDouble - +(((~~(tempDouble)))>>>0))/4294967296.0)))))>>>0) : 0)], HEAP32[(((pbuf)+(8))>>2)] = tempI64[0],HEAP32[(((pbuf)+(12))>>2)] = tempI64[1]);
+      (tempI64 = [rightsInheriting>>>0,(tempDouble = rightsInheriting,(+(Math.abs(tempDouble))) >= 1.0 ? (tempDouble > 0.0 ? (+(Math.floor((tempDouble)/4294967296.0)))>>>0 : (~~((+(Math.ceil((tempDouble - +(((~~(tempDouble)))>>>0))/4294967296.0)))))>>>0) : 0)], HEAP32[(((pbuf)+(16))>>2)] = tempI64[0],HEAP32[(((pbuf)+(20))>>2)] = tempI64[1]);
+      return 0;
+    } catch (e) {
+    if (typeof FS == 'undefined' || !(e.name === 'ErrnoError')) throw e;
+    return e.errno;
+  }
+  }
+
   /** @param {number=} offset */
   var doReadv = (stream, iov, iovcnt, offset) => {
       var ret = 0;
@@ -8214,11 +8605,6 @@ function GetWindowInnerHeight() { return window.innerHeight; }
   }
 
   
-  var convertI32PairToI53Checked = (lo, hi) => {
-      assert(lo == (lo >>> 0) || lo == (lo|0)); // lo should either be a i32 or a u32
-      assert(hi === (hi|0));                    // hi should be a i32
-      return ((hi + 0x200000) >>> 0 < 0x400001 - !!lo) ? (lo >>> 0) + hi * 4294967296 : NaN;
-    };
   function _fd_seek(fd,offset_low, offset_high,whence,newOffset) {
     var offset = convertI32PairToI53Checked(offset_low, offset_high);
   
@@ -9899,6 +10285,16 @@ function GetWindowInnerHeight() { return window.innerHeight; }
 
 
 
+  
+  
+  var stackAlloc = (sz) => __emscripten_stack_alloc(sz);
+  var stringToUTF8OnStack = (str) => {
+      var size = lengthBytesUTF8(str) + 1;
+      var ret = stackAlloc(size);
+      stringToUTF8(str, ret, size);
+      return ret;
+    };
+
 
   var runAndAbortIfError = (func) => {
       try {
@@ -10230,11 +10626,17 @@ var wasmImports = {
   /** @export */
   __cxa_throw: ___cxa_throw,
   /** @export */
+  __syscall_chmod: ___syscall_chmod,
+  /** @export */
   __syscall_faccessat: ___syscall_faccessat,
+  /** @export */
+  __syscall_fchmod: ___syscall_fchmod,
   /** @export */
   __syscall_fcntl64: ___syscall_fcntl64,
   /** @export */
   __syscall_fstat64: ___syscall_fstat64,
+  /** @export */
+  __syscall_ftruncate64: ___syscall_ftruncate64,
   /** @export */
   __syscall_getcwd: ___syscall_getcwd,
   /** @export */
@@ -10243,6 +10645,8 @@ var wasmImports = {
   __syscall_ioctl: ___syscall_ioctl,
   /** @export */
   __syscall_lstat64: ___syscall_lstat64,
+  /** @export */
+  __syscall_mkdirat: ___syscall_mkdirat,
   /** @export */
   __syscall_newfstatat: ___syscall_newfstatat,
   /** @export */
@@ -10630,6 +11034,8 @@ var wasmImports = {
   /** @export */
   fd_close: _fd_close,
   /** @export */
+  fd_fdstat_get: _fd_fdstat_get,
+  /** @export */
   fd_read: _fd_read,
   /** @export */
   fd_seek: _fd_seek,
@@ -10796,7 +11202,7 @@ var wasmExports = createWasm();
 var ___wasm_call_ctors = createExportWrapper('__wasm_call_ctors', 0);
 var _malloc = createExportWrapper('malloc', 1);
 var _free = createExportWrapper('free', 1);
-var _main = Module['_main'] = createExportWrapper('main', 2);
+var _main = Module['_main'] = createExportWrapper('__main_argc_argv', 2);
 var _fflush = createExportWrapper('fflush', 1);
 var _emscripten_stack_init = () => (_emscripten_stack_init = wasmExports['emscripten_stack_init'])();
 var _emscripten_stack_get_free = () => (_emscripten_stack_get_free = wasmExports['emscripten_stack_get_free'])();
@@ -10866,7 +11272,6 @@ var missingLibrarySymbols = [
   'writeI53ToU64Signaling',
   'convertI32PairToI53',
   'convertU32PairToI53',
-  'stackAlloc',
   'getTempRet0',
   'setTempRet0',
   'growMemory',
@@ -10915,7 +11320,6 @@ var missingLibrarySymbols = [
   'UTF32ToString',
   'stringToUTF32',
   'lengthBytesUTF32',
-  'stringToUTF8OnStack',
   'registerKeyEventCallback',
   'registerWheelEventCallback',
   'registerFocusEventCallback',
@@ -10998,6 +11402,7 @@ var unexportedSymbols = [
   'convertI32PairToI53Checked',
   'stackSave',
   'stackRestore',
+  'stackAlloc',
   'ptrToString',
   'zeroMemory',
   'exitJS',
@@ -11054,6 +11459,7 @@ var unexportedSymbols = [
   'stringToAscii',
   'UTF16Decoder',
   'stringToNewUTF8',
+  'stringToUTF8OnStack',
   'writeArrayToMemory',
   'JSEvents',
   'specialHTMLTargets',
@@ -11136,6 +11542,7 @@ var unexportedSymbols = [
   'allocateUTF8OnStack',
   'print',
   'printErr',
+  'IDBFS',
 ];
 unexportedSymbols.forEach(unexportedRuntimeSymbol);
 
@@ -11149,14 +11556,22 @@ dependenciesFulfilled = function runCaller() {
   if (!calledRun) dependenciesFulfilled = runCaller; // try this again later, after new deps are fulfilled
 };
 
-function callMain() {
+function callMain(args = []) {
   assert(runDependencies == 0, 'cannot call main when async dependencies remain! (listen on Module["onRuntimeInitialized"])');
   assert(__ATPRERUN__.length == 0, 'cannot call main when preRun functions remain to be called');
 
   var entryFunction = _main;
 
-  var argc = 0;
-  var argv = 0;
+  args.unshift(thisProgram);
+
+  var argc = args.length;
+  var argv = stackAlloc((argc + 1) * 4);
+  var argv_ptr = argv;
+  args.forEach((arg) => {
+    HEAPU32[((argv_ptr)>>2)] = stringToUTF8OnStack(arg);
+    argv_ptr += 4;
+  });
+  HEAPU32[((argv_ptr)>>2)] = 0;
 
   try {
 
@@ -11180,7 +11595,7 @@ function stackCheckInit() {
   writeStackCookie();
 }
 
-function run() {
+function run(args = arguments_) {
 
   if (runDependencies > 0) {
     return;
@@ -11210,7 +11625,7 @@ function run() {
 
     if (Module['onRuntimeInitialized']) Module['onRuntimeInitialized']();
 
-    if (shouldRunNow) callMain();
+    if (shouldRunNow) callMain(args);
 
     postRun();
   }
