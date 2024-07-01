@@ -16,65 +16,109 @@
 <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" tabindex=-1></canvas>
 
 <script type='text/javascript'>
-    var Module = {
-        preRun: [],
-        postRun: [],
-        print: (function() {
-            var element = document.getElementById('output');
-            if (element) element.value = ''; // clear browser cache
-            return function(text) {
-                if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
-                // These replacements are necessary if you render to raw HTML
-                //text = text.replace(/&/g, "&amp;");
-                //text = text.replace(/</g, "&lt;");
-                //text = text.replace(/>/g, "&gt;");
-                //text = text.replace('\n', '<br>', 'g');
-                console.log(text);
-                if (element) {
-                    element.value += text + "\n";
-                    element.scrollTop = element.scrollHeight; // focus on bottom
-                }
-            };
-        })(),
-        printErr: function(text) {
+//This is the code that ship with emscripten's default "shell.html". I have no idea what it does, but it somehow
+//loads the wasm stuff.
+var Module = {
+    preRun: [],
+    postRun: [],
+    print: (function() {
+        var element = document.getElementById('output');
+        if (element) element.value = ''; // clear browser cache
+        return function(text) {
             if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
-            console.error(text);
-        },
-        canvas: (function() {
-            var canvas = document.getElementById('canvas');
-
-            // As a default initial behavior, pop up an alert when webgl context is lost. To make your
-            // application robust, you may want to override this behavior before shipping!
-            // See http://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15.2
-            canvas.addEventListener("webglcontextlost", function(e) { alert('WebGL context lost. You will need to reload the page.'); e.preventDefault(); }, false);
-
-            return canvas;
-        })(),
-        setStatus: function(text) {
-            if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
-            if (text === Module.setStatus.last.text) return;
-            var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
-            var now = Date.now();
-            if (m && now - Module.setStatus.last.time < 30) return; // if this is a progress update, skip it if too soon
-            Module.setStatus.last.time = now;
-            Module.setStatus.last.text = text;
-            if (m) {
-                text = m[1];
+            // These replacements are necessary if you render to raw HTML
+            //text = text.replace(/&/g, "&amp;");
+            //text = text.replace(/</g, "&lt;");
+            //text = text.replace(/>/g, "&gt;");
+            //text = text.replace('\n', '<br>', 'g');
+            console.log(text);
+            if (element) {
+                element.value += text + "\n";
+                element.scrollTop = element.scrollHeight; // focus on bottom
             }
-        },
-        totalDependencies: 0,
-        monitorRunDependencies: function(left) {
-            this.totalDependencies = Math.max(this.totalDependencies, left);
-            Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
-        }
-    };
-    Module.setStatus('Downloading...');
-    window.onerror = function() {
-        Module.setStatus('Exception thrown, see JavaScript console');
-        Module.setStatus = function(text) {
-            if (text) Module.printErr('[post-exception status] ' + text);
         };
+    })(),
+    printErr: function(text) {
+        if (arguments.length > 1) text = Array.prototype.slice.call(arguments).join(' ');
+        console.error(text);
+    },
+    canvas: (function() {
+        var canvas = document.getElementById('canvas');
+
+        // As a default initial behavior, pop up an alert when webgl context is lost. To make your
+        // application robust, you may want to override this behavior before shipping!
+        // See http://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15.2
+        canvas.addEventListener("webglcontextlost", function(e) { alert('WebGL context lost. You will need to reload the page.'); e.preventDefault(); }, false);
+
+        return canvas;
+    })(),
+    setStatus: function(text) {
+        if (!Module.setStatus.last) Module.setStatus.last = { time: Date.now(), text: '' };
+        if (text === Module.setStatus.last.text) return;
+        var m = text.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/);
+        var now = Date.now();
+        if (m && now - Module.setStatus.last.time < 30) return; // if this is a progress update, skip it if too soon
+        Module.setStatus.last.time = now;
+        Module.setStatus.last.text = text;
+        if (m) {
+            text = m[1];
+        }
+    },
+    totalDependencies: 0,
+    monitorRunDependencies: function(left) {
+        this.totalDependencies = Math.max(this.totalDependencies, left);
+        Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+    }
+};
+Module.setStatus('Downloading...');
+window.onerror = function() {
+    Module.setStatus('Exception thrown, see JavaScript console');
+    Module.setStatus = function(text) {
+        if (text) Module.printErr('[post-exception status] ' + text);
     };
+};</script>
+<script type='text/javascript'>
+//The level editor use the ctrl+s shortcut. However, on most web browser, hitting that key combo will trigger the
+//"save page" popup. This code prevent that from happening.
+document.addEventListener("keydown", function(e) {
+    if(e.key !== "F12") {
+        e.preventDefault();
+    }
+});
+</script>
+<script type='text/javascript'>
+///This function can be used to download a file from emscripten's filesystem
+function downloadFromFS(path) {
+    path = path.toString();     //No idea if this is useful or not
+
+    //Navigating to the correct path/file
+    const pathParts = path.split('/').filter(part => part);
+    let currentDir = FS.root;
+    for (let i = 0; i < pathParts.length; i++) {
+        if (!currentDir.contents[pathParts[i]]) {
+            throw new Error("File or directory not found");
+        }
+        currentDir = currentDir.contents[pathParts[i]];
+    }
+
+    //Make sure the content exist
+    //TODO : ensure the thing is a file (not a directory)? Maybe using "mode" ?
+    if (!currentDir.contents || typeof currentDir.contents !== 'object') {
+        throw new Error("Not a file");
+    }
+
+    //Prepare the content for download
+    const fileContents = currentDir.contents;
+    const uint8Array = new Uint8Array(fileContents);
+    const blob = new Blob([uint8Array], { type: 'application/octet-stream' });
+
+    //Dirty trick to make it download the file
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = pathParts[pathParts.length - 1];  // Use the file name from the path
+    link.click();
+    URL.revokeObjectURL(link.href);
+}
 </script>
 <script async type="text/javascript" src="adeterminer.js"></script>
 </body>
