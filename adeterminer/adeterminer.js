@@ -39,7 +39,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmpbr5p2f98.js
+// include: /tmp/tmp0yrfe684.js
 
   if (!Module.expectedDataFileDownloads) {
     Module.expectedDataFileDownloads = 0;
@@ -149,6 +149,7 @@ var REMOTE_PACKAGE_SIZE = metadata['remote_package_size'];
         if (!check) throw msg + new Error().stack;
       }
 Module['FS_createPath']("/", "maps", true, true);
+Module['FS_createPath']("/maps", "old", true, true);
 Module['FS_createPath']("/", "res", true, true);
 
       /** @constructor */
@@ -217,25 +218,25 @@ Module['FS_createPath']("/", "res", true, true);
     }
 
     }
-    loadPackage({"files": [{"filename": "/maps/Big.leg", "start": 0, "end": 82}, {"filename": "/maps/Big4.leg", "start": 82, "end": 212}, {"filename": "/maps/Little.leg", "start": 212, "end": 382}, {"filename": "/res/battery.png", "start": 382, "end": 1986}, {"filename": "/res/cannon_sprite.png", "start": 1986, "end": 3589}, {"filename": "/res/collisions.png", "start": 3589, "end": 3835}, {"filename": "/res/cool_transition.png", "start": 3835, "end": 483826}, {"filename": "/res/default.png", "start": 483826, "end": 494359}, {"filename": "/res/empty_outline.png", "start": 494359, "end": 498740}, {"filename": "/res/explosion-boom.png", "start": 498740, "end": 511646}, {"filename": "/res/green_marker.png", "start": 511646, "end": 512415}, {"filename": "/res/jumping_sprite.png", "start": 512415, "end": 514018}, {"filename": "/res/littlewowmap.png", "start": 514018, "end": 518640}, {"filename": "/res/menubg.png", "start": 518640, "end": 519276}, {"filename": "/res/menubg_credits.png", "start": 519276, "end": 524347}, {"filename": "/res/menubg_credits_alt.png", "start": 524347, "end": 529409}, {"filename": "/res/menubg_grayscale.png", "start": 529409, "end": 530037}, {"filename": "/res/menubg_option.png", "start": 530037, "end": 535105}, {"filename": "/res/mini.png", "start": 535105, "end": 539574}, {"filename": "/res/mini_blue.png", "start": 539574, "end": 541202}, {"filename": "/res/mini_ded.png", "start": 541202, "end": 545567}, {"filename": "/res/mini_red.png", "start": 545567, "end": 547195}, {"filename": "/res/player.png", "start": 547195, "end": 553174}, {"filename": "/res/player_injump.png", "start": 553174, "end": 560987}, {"filename": "/res/player_jump.png", "start": 560987, "end": 567419}, {"filename": "/res/player_portal.png", "start": 567419, "end": 585894}, {"filename": "/res/player_shooting.png", "start": 585894, "end": 594074}, {"filename": "/res/player_wall.png", "start": 594074, "end": 609135}, {"filename": "/res/portal.png", "start": 609135, "end": 615047}, {"filename": "/res/portal_anim.png", "start": 615047, "end": 625992}, {"filename": "/res/portal_gun.png", "start": 625992, "end": 626807}, {"filename": "/res/portal_remover.png", "start": 626807, "end": 632226}, {"filename": "/res/potato.png", "start": 632226, "end": 633180}, {"filename": "/res/strength_downgrade.png", "start": 633180, "end": 633400}, {"filename": "/res/strength_upgrade.png", "start": 633400, "end": 633618}, {"filename": "/res/testsprite.png", "start": 633618, "end": 633738}, {"filename": "/res/tiled_button.png", "start": 633738, "end": 634371}, {"filename": "/res/tiled_button_left.png", "start": 634371, "end": 634993}, {"filename": "/res/tiled_button_right.png", "start": 634993, "end": 635630}, {"filename": "/res/tilemap_grass.aseprite", "start": 635630, "end": 637172}, {"filename": "/res/tilemap_grass.png", "start": 637172, "end": 638886}, {"filename": "/res/truelle.png", "start": 638886, "end": 639244}, {"filename": "/res/wall.png", "start": 639244, "end": 645996}, {"filename": "/res/wowmap.png", "start": 645996, "end": 658419}], "remote_package_size": 658419});
+    loadPackage({"files": [{"filename": "/maps/Big.leg", "start": 0, "end": 82}, {"filename": "/maps/Big4.leg", "start": 82, "end": 212}, {"filename": "/maps/Little.leg", "start": 212, "end": 382}, {"filename": "/maps/old/silly.lev", "start": 382, "end": 131454}, {"filename": "/res/battery.png", "start": 131454, "end": 133058}, {"filename": "/res/cannon_sprite.png", "start": 133058, "end": 134661}, {"filename": "/res/collisions.png", "start": 134661, "end": 134907}, {"filename": "/res/cool_transition.png", "start": 134907, "end": 614898}, {"filename": "/res/default.png", "start": 614898, "end": 625431}, {"filename": "/res/empty_outline.png", "start": 625431, "end": 629812}, {"filename": "/res/explosion-boom.png", "start": 629812, "end": 642718}, {"filename": "/res/green_marker.png", "start": 642718, "end": 643487}, {"filename": "/res/jumping_sprite.png", "start": 643487, "end": 645090}, {"filename": "/res/littlewowmap.png", "start": 645090, "end": 649712}, {"filename": "/res/menubg.png", "start": 649712, "end": 650348}, {"filename": "/res/menubg_credits.png", "start": 650348, "end": 655419}, {"filename": "/res/menubg_credits_alt.png", "start": 655419, "end": 660481}, {"filename": "/res/menubg_grayscale.png", "start": 660481, "end": 661109}, {"filename": "/res/menubg_option.png", "start": 661109, "end": 666177}, {"filename": "/res/mini.png", "start": 666177, "end": 670646}, {"filename": "/res/mini_blue.png", "start": 670646, "end": 672274}, {"filename": "/res/mini_ded.png", "start": 672274, "end": 676639}, {"filename": "/res/mini_red.png", "start": 676639, "end": 678267}, {"filename": "/res/player.png", "start": 678267, "end": 684246}, {"filename": "/res/player_injump.png", "start": 684246, "end": 692059}, {"filename": "/res/player_jump.png", "start": 692059, "end": 698491}, {"filename": "/res/player_portal.png", "start": 698491, "end": 716966}, {"filename": "/res/player_shooting.png", "start": 716966, "end": 725146}, {"filename": "/res/player_wall.png", "start": 725146, "end": 740207}, {"filename": "/res/portal.png", "start": 740207, "end": 746119}, {"filename": "/res/portal_anim.png", "start": 746119, "end": 757064}, {"filename": "/res/portal_gun.png", "start": 757064, "end": 757879}, {"filename": "/res/portal_remover.png", "start": 757879, "end": 763298}, {"filename": "/res/potato.png", "start": 763298, "end": 764252}, {"filename": "/res/strength_downgrade.png", "start": 764252, "end": 764472}, {"filename": "/res/strength_upgrade.png", "start": 764472, "end": 764690}, {"filename": "/res/testsprite.png", "start": 764690, "end": 764810}, {"filename": "/res/tiled_button.png", "start": 764810, "end": 765443}, {"filename": "/res/tiled_button_left.png", "start": 765443, "end": 766065}, {"filename": "/res/tiled_button_right.png", "start": 766065, "end": 766702}, {"filename": "/res/tilemap_grass.aseprite", "start": 766702, "end": 768244}, {"filename": "/res/tilemap_grass.png", "start": 768244, "end": 769958}, {"filename": "/res/truelle.png", "start": 769958, "end": 770316}, {"filename": "/res/wall.png", "start": 770316, "end": 777068}, {"filename": "/res/wowmap.png", "start": 777068, "end": 789491}], "remote_package_size": 789491});
 
   })();
 
-// end include: /tmp/tmpbr5p2f98.js
-// include: /tmp/tmp0s6s044h.js
+// end include: /tmp/tmp0yrfe684.js
+// include: /tmp/tmpr47u6ij5.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['$ww'] || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp0s6s044h.js
-// include: /tmp/tmpyp56e6kt.js
+  // end include: /tmp/tmpr47u6ij5.js
+// include: /tmp/tmpppdt64tj.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach(function(task) {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmpyp56e6kt.js
+  // end include: /tmp/tmpppdt64tj.js
 
 
 // Sometimes an existing Module object exists with properties
@@ -1126,43 +1127,43 @@ function dbg(...args) {
 // === Body ===
 
 var ASM_CONSTS = {
-  120836: () => { FS.mkdir('/idbfs'); FS.mount(IDBFS, {}, '/idbfs'); FS.syncfs(true, function (err) { console.log("Failed to mount idbfs, things are most likely going to break"); console.log(err); }); },  
- 121019: () => { FS.syncfs(function (err) { }); },  
- 121050: ($0) => { downloadFromFS(UTF8ToString($0)); },  
- 121088: () => { if (document.fullscreenElement) return 1; },  
- 121134: () => { return document.getElementById('canvas').width; },  
- 121186: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 121254: () => { document.exitFullscreen(); },  
- 121281: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
- 121354: () => { if (document.fullscreenElement) return 1; },  
- 121400: () => { return document.getElementById('canvas').width; },  
- 121452: () => { return screen.width; },  
- 121477: () => { document.exitFullscreen(); },  
- 121504: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
- 121637: () => { if (document.fullscreenElement) return 1; },  
- 121683: () => { return document.getElementById('canvas').width; },  
- 121735: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 121803: () => { if (document.fullscreenElement) return 1; },  
- 121849: () => { return document.getElementById('canvas').width; },  
- 121901: () => { return screen.width; },  
- 121926: () => { if (document.fullscreenElement) return 1; },  
- 121972: () => { return document.getElementById('canvas').width; },  
- 122024: () => { return screen.width; },  
- 122049: () => { document.exitFullscreen(); },  
- 122076: () => { if (document.fullscreenElement) return 1; },  
- 122122: () => { return document.getElementById('canvas').width; },  
- 122174: () => { return parseInt(document.getElementById('canvas').style.width); },  
- 122242: () => { document.exitFullscreen(); },  
- 122269: () => { return screen.width; },  
- 122294: () => { return screen.height; },  
- 122320: () => { return window.screenX; },  
- 122347: () => { return window.screenY; },  
- 122374: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
- 122427: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
- 122498: () => { document.getElementById('canvas').style.cursor = 'none'; },  
- 122555: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
- 122626: () => { if (document.fullscreenElement) return 1; },  
- 122672: () => { if (document.pointerLockElement) return 1; }
+  122532: () => { FS.mkdir('/idbfs'); FS.mount(IDBFS, {}, '/idbfs'); FS.syncfs(true, function (err) { console.log("Failed to mount idbfs, things are most likely going to break"); console.log(err); }); },  
+ 122715: () => { FS.syncfs(function (err) { }); },  
+ 122746: ($0) => { downloadFromFS(UTF8ToString($0)); },  
+ 122784: () => { if (document.fullscreenElement) return 1; },  
+ 122830: () => { return document.getElementById('canvas').width; },  
+ 122882: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 122950: () => { document.exitFullscreen(); },  
+ 122977: () => { setTimeout(function() { Module.requestFullscreen(false, false); }, 100); },  
+ 123050: () => { if (document.fullscreenElement) return 1; },  
+ 123096: () => { return document.getElementById('canvas').width; },  
+ 123148: () => { return screen.width; },  
+ 123173: () => { document.exitFullscreen(); },  
+ 123200: () => { setTimeout(function() { Module.requestFullscreen(false, true); setTimeout(function() { canvas.style.width="unset"; }, 100); }, 100); },  
+ 123333: () => { if (document.fullscreenElement) return 1; },  
+ 123379: () => { return document.getElementById('canvas').width; },  
+ 123431: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 123499: () => { if (document.fullscreenElement) return 1; },  
+ 123545: () => { return document.getElementById('canvas').width; },  
+ 123597: () => { return screen.width; },  
+ 123622: () => { if (document.fullscreenElement) return 1; },  
+ 123668: () => { return document.getElementById('canvas').width; },  
+ 123720: () => { return screen.width; },  
+ 123745: () => { document.exitFullscreen(); },  
+ 123772: () => { if (document.fullscreenElement) return 1; },  
+ 123818: () => { return document.getElementById('canvas').width; },  
+ 123870: () => { return parseInt(document.getElementById('canvas').style.width); },  
+ 123938: () => { document.exitFullscreen(); },  
+ 123965: () => { return screen.width; },  
+ 123990: () => { return screen.height; },  
+ 124016: () => { return window.screenX; },  
+ 124043: () => { return window.screenY; },  
+ 124070: ($0) => { navigator.clipboard.writeText(UTF8ToString($0)); },  
+ 124123: ($0) => { document.getElementById("canvas").style.cursor = UTF8ToString($0); },  
+ 124194: () => { document.getElementById('canvas').style.cursor = 'none'; },  
+ 124251: ($0) => { document.getElementById('canvas').style.cursor = UTF8ToString($0); },  
+ 124322: () => { if (document.fullscreenElement) return 1; },  
+ 124368: () => { if (document.pointerLockElement) return 1; }
 };
 function GetWindowInnerWidth() { return window.innerWidth; }
 function GetWindowInnerHeight() { return window.innerHeight; }
@@ -10949,8 +10950,8 @@ var wasmImports = {
 var wasmExports = createWasm();
 var ___wasm_call_ctors = createExportWrapper('__wasm_call_ctors', 0);
 var _malloc = createExportWrapper('malloc', 1);
-var _main = Module['_main'] = createExportWrapper('__main_argc_argv', 2);
 var _free = createExportWrapper('free', 1);
+var _main = Module['_main'] = createExportWrapper('__main_argc_argv', 2);
 var _fflush = createExportWrapper('fflush', 1);
 var _emscripten_stack_init = () => (_emscripten_stack_init = wasmExports['emscripten_stack_init'])();
 var _emscripten_stack_get_free = () => (_emscripten_stack_get_free = wasmExports['emscripten_stack_get_free'])();
